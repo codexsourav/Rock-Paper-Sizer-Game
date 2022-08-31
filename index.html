@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Sizer Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/play.css" />
+
+    <!-- font-family: 'Roboto', sans-serif; -->
+  </head>
+  <body>
+    <div class="gamebox" id="gamebox">
+      <div class="main">
+        <img src="images/logo.png" alt="game logo" class="gamelogo" />
+        <h1 class="title">rock paper scissors</h1>
+        <button class="play" id="play">PLAY NOW</button>
+      </div>
+    </div>
+
+    <!-- game box start game  -->
+
+    <div class="playbox" id="playbox">
+      <div class="hand">
+        <img src="images/rock.png" class="img" id="handimg" />
+      </div>
+      <div class="action">
+        <h2 class="retit" id="handname">PAPER</h2>
+        <button class="sgain" onclick="startPaly()">PLAY AGAIN</button>
+      </div>
+    </div>
+    <div id="counter">READY !</div>
+    <script src="js/game.js"></script>
+  </body>
+</html>
